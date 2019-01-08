@@ -43,4 +43,7 @@ Some of my favorites are:
 +  `Ctrl` + `Shift` + `c`: comment all selected lines (insert `#` in front)  
 +  `Ctrl` + `i`: re-indent selected code
 +  `Ctrl` + `Alt` + `i`: insert a code chunk into RMarkdown file  
-+  `F2`: shows code used by function
++  `F2`: shows code used by function  
+
+
+__[RStudio webinars](https://resources.rstudio.com/webinars)__  Several helpful webinars and presentations from past _rstudio::conf_ meetings.
