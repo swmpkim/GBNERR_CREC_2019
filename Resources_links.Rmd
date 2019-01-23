@@ -27,6 +27,8 @@ __[Where to get help with your R question?](https://masalmon.eu/2018/07/22/where
 # Intro material  
 
 __[R basics, workspace and working directory, RStudio projects](http://stat545.com/block002_hello-r-workspace-wd-project.html)__ from STAT 545  
+
+__[What They Forgot to Teach You About R](https://whattheyforgot.org/)__ - workshop materials by Jenny Bryan and Jim Hester
    
 <br>  
 
@@ -46,4 +48,49 @@ Some of my favorites are:
 +  `F2`: shows code used by function  
 
 
-__[RStudio webinars](https://resources.rstudio.com/webinars)__  Several helpful webinars and presentations from past _rstudio::conf_ meetings.
+__[RStudio webinars](https://resources.rstudio.com/webinars)__  Several helpful webinars and presentations from past _rstudio::conf_ meetings.  
+
+
+# Communities  
+
+Email lists, etc.  
+R4DS community  
+`#tidytuesday`
+
+
+# Free Online Books  
+
+Some more specialized than others  
+
+## R and the Tidyverse Generally  
+
+__[R For Data Science](https://r4ds.had.co.nz/)__ - by Hadley Wickham and Garrett Grolemund  
+
+__[Advanced R](http://adv-r.had.co.nz/)__ - by Hadley Wickham  
+
+__[R Packages](http://r-pkgs.had.co.nz/)__ - by Hadley Wickham
+
+## Data Viz  
+
+__[Data Visualization: A Practical Introduction](http://socviz.co/)__ - by Kieran Healy. Also a good intro to the `ggplot2` package; learn by doing.    
+
+__[Fundamentals of Data Visualization](https://serialmentor.com/dataviz/)__ - by Claus O. Wilke
+
+
+## R Markdown  
+
+__[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)__ - by Yihui Xie, J.J. Allaire, and Garrett Grolemund  
+
+
+## Geospatial Data  
+
+__[Geocomputation with R](https://geocompr.robinlovelace.net/)__ - by Robin Lovelace, Jakub Nowosad, and Jannes Muenchow  
+
+
+## Version Control (Git and Github)  
+
+__[Happy Git with R](http://happygitwithr.com)__ - by Jenny Bryan  
+
+<br>
+<br>
+
