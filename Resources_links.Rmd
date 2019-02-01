@@ -66,6 +66,8 @@ Some more specialized than others
 
 __[R For Data Science](https://r4ds.had.co.nz/)__ - by Hadley Wickham and Garrett Grolemund  
 
+__[Getting used to R, RStudio, and R Markdown](https://bookdown.org/chesterismay/rbasics/)__ - by Chester Ismay
+
 __[Advanced R](http://adv-r.had.co.nz/)__ - by Hadley Wickham  
 
 __[R Packages](http://r-pkgs.had.co.nz/)__ - by Hadley Wickham
