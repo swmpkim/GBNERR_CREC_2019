@@ -1,5 +1,5 @@
 ---
-title: "Resources to share"
+title: "Helpful R Resources"
 output: 
   html_document: 
     keep_md: yes
@@ -14,17 +14,19 @@ output:
 
 <br>
 
-__[How to get unstuck](http://stat545.com/help-general.html)__ from STAT 545  
+__[How to get unstuck](http://stat545.com/help-general.html)__ - from STAT 545  
 
 
-__[Where to get help with your R question?](https://masalmon.eu/2018/07/22/wheretogethelp/)__ from Maelle Salmon's blog  
+__[Where to get help with your R question?](https://masalmon.eu/2018/07/22/wheretogethelp/)__ - from Maelle Salmon's blog  
+
+__[Writing the perfect question](https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)__ - from Jon Skeet's coding blog  
 
 
 <br>  
 
 # Intro material  
 
-__[R basics, workspace and working directory, RStudio projects](http://stat545.com/block002_hello-r-workspace-wd-project.html)__ from STAT 545  
+__[R basics, workspace and working directory, RStudio projects](http://stat545.com/block002_hello-r-workspace-wd-project.html)__ - from STAT 545  
 
 __[What They Forgot to Teach You About R](https://whattheyforgot.org/)__ - workshop materials by Jenny Bryan and Jim Hester
    
