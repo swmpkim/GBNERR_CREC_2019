@@ -88,6 +88,8 @@ __[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)__ - 
 
 __[Geocomputation with R](https://geocompr.robinlovelace.net/)__ - by Robin Lovelace, Jakub Nowosad, and Jannes Muenchow  
 
+__[Spatial Data Science](http://r-spatial.org/book)__ - by Edzer Pebesma and Roger Bivand; in progress  
+
 
 ## Version Control (Git and Github)  
 
