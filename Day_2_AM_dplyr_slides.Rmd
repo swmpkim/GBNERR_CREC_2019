@@ -1,0 +1,31 @@
+---
+title: 'Day 2, AM: Data Wrangling in the Tidyverse'
+author: "Data Carpentry Team, modified by Kim Cressman"
+date: "February 13, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Key Concepts  
+
++  Split-Apply-Combine concept of data analysis  
++  Wide vs. Long data formats, and when each is useful  
++  Key-value pairs  
++  Exporting data  
+
+## Key functions  
+
+From **`dplyr`**:  
+
++  `select()` - select certain columns  
++  `filter()` - select rows that meet a certain condition  
++  `%>%` - "the pipe operator" - string together lots of commands!  
++  `mutate()` - add or modify columns  
++  `group_by()` and `summarize()` - calculate summary statistics by group in your data frame  
+
+From **`tidyr`**:  
+
++  `gather()` and `spread()` - reshape data between wide and long formats 

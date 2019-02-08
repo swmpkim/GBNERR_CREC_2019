@@ -1,0 +1,48 @@
+---
+title: "Working with Data and Graphing in R"
+author: "Kim Cressman and Auriel Fournier"
+date: "February 12-13, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Welcome  
+
+Here's how this workshop will be structured:  
+
++  half-hour breaks in morning and afternoon  
++  full hour for lunch  
++  colored sticky notes! Put on your computer to signal:   
+    +  blue: "I'm finished with the task you gave me"  
+    +  orange: "I need some help"  
+    
+We encourage you to type along; don't just copy and paste from provided scripts  
+    
+
+## Ground Rules  
+
+Be respectful  
+
+Help each other  
+
+Go easy on yourself  
+
+## Some vocabulary  
+
++  Base R / Tidyverse  
++  Packages  
+    +  installed *__once__* with **`install.packages("package_name")`**  
+    +  loaded *__every time you need them__* with **`library(package_name)`** or *`require(package_name)`*  
+    +  **`library`** is better than **`require`**  (https://yihui.name/en/2014/07/library-vs-require/)  
++  Data Frames  
++  Vectors  
++  Objects  
++  Functions  
+
+## Good practices for scripts  
+
+1.  Use scripts.  
+2.  Load all libraries (packages) at the top of your script.  
