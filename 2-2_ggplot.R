@@ -357,6 +357,16 @@ ggplot(surveys_complete, aes(x = species_id, y = hindfoot_length)) +
 
 
 
+## also play with "ggThemeAssist" addin
+# install.packages("ggThemeAssist")
+surveys_plot +
+    geom_point() + 
+    theme(plot.subtitle = element_text(vjust = 1), 
+          plot.caption = element_text(vjust = 1), 
+          panel.background = element_rect(fill = NA)) +
+    labs(title = "Hindfoot Length", 
+         x = "weight (g)", 
+         y = "hindfoot length (mm)")
 
 ###############################################################################
 ### Challenge
@@ -373,4 +383,96 @@ ggplot(surveys_complete, aes(x = species_id, y = hindfoot_length)) +
 
 ###############################################################################
 
+# if you need a graph to improve:
+surveys_plot +
+    geom_line() + 
+    theme(axis.text.x = element_text(size = 15, ang=90, color = "purple"), 
+          axis.text.y = element_text(size = 2, color = "red"), 
+          axis.title.y = element_text(size = 20), 
+          plot.background = element_rect(fill="green"), 
+          panel.background = element_rect(fill="red", color="black"), 
+          panel.grid.major = element_line(colour = "red"), 
+          panel.grid.minor = element_line(colour = "purple"), 
+          title = element_text(size = 1), 
+          #        axis.line.x = element_line(colour = "black"), 
+          #        axis.line.y = element_line(colour = "black"), 
+          strip.background = element_rect(fill = "orange", color = "black"), 
+          strip.text = element_text(size = 15, color="red"),
+          legend.background = element_rect(fill="black"),
+          legend.text = element_text(color="gray"),
+          legend.key=element_rect(fill="white"))
 
+
+
+##### Arranging Plots using gridExtra or cowplot
+library(gridExtra)
+# library(cowplot)
+
+# make a couple plots, and name them
+spp_weight_boxplot <- ggplot(data = surveys_complete, 
+                             mapping = aes(x = species_id, y = weight)) +
+    geom_boxplot() +
+    xlab("Species") + 
+    ylab("Weight (g)") +
+    scale_y_log10()
+spp_count_plot <- ggplot(data = yearly_counts, 
+                         mapping = aes(x = year, y = n, color = species_id)) +
+    geom_line() + 
+    xlab("Year") + 
+    ylab("Abundance")
+
+# now put them next to each other
+
+# gridExtra option:
+grid.arrange(spp_weight_boxplot, spp_count_plot, ncol = 2, widths = c(4, 6))
+#cowplot option:
+plot_grid(spp_weight_boxplot, spp_count_plot, rel_widths = c(4, 6))
+
+# remember that help files are useful:
+?grid.arrange
+?plot_grid
+
+
+### saving plots
+# can use 'export' from the plot window; not great
+# ggsave is good
+my_plot <- ggplot(data = yearly_sex_counts, 
+                  mapping = aes(x = year, y = n, color = sex)) +
+    geom_line() +
+    facet_wrap(~ species_id) +
+    labs(title = "Observed species in time",
+         x = "Year of observation",
+         y = "Number of species") +
+    theme_bw() +
+    theme(axis.text.x = element_text(colour = "grey20", size = 12, 
+                                     angle = 90, hjust = 0.5, vjust = 0.5),
+          axis.text.y = element_text(colour = "grey20", size = 12),
+          text=element_text(size = 16))
+ggplot2::ggsave("fig_output/yearly_sex_counts.png", my_plot, width = 15, height = 10)
+# had to use this notation because ggplot's ggsave is masked by having cowplot open
+# :: lets you specify the package that a function comes from
+
+
+# This also works for grid.arrange() plots
+combo_plot <- grid.arrange(spp_weight_boxplot, spp_count_plot, 
+                           ncol = 2, widths = c(4, 6))
+ggplot2::ggsave("fig_output/combo_plot_abun_weight.png", combo_plot, width = 10, dpi = 300)
+
+
+# to save a cowplot, use either cowplot or ggplot2's ggsave
+combo_plot2 <- plot_grid(spp_weight_boxplot, spp_count_plot, rel_widths = c(4, 6))
+cowplot::ggsave("fig_output/combo_plot_abun_weight2.png", combo_plot2, width = 10, dpi = 300)
+
+
+###############################################################################
+### Final plotting challenge:
+##  With all of this information in hand, please take another five
+##  minutes to either improve one of the plots generated in this
+##  exercise or create a beautiful graph of your own. 
+
+##  Export it to the fig_output folder.
+
+##  Use the RStudio
+##  ggplot2 cheat sheet for inspiration:
+##  https://www.rstudio.com/wp-content/uploads/2015/08/ggplot2-cheatsheet.pdf
+###############################################################################
