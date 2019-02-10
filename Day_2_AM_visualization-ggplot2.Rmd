@@ -1,14 +1,22 @@
 ---
 title: Data visualization with ggplot2
-author: Data Carpentry contributors
+author: Data Carpentry contributors, modified by Kim Cressman
 minutes: 60
 ---
 
+
+```{r}
+library(tidyverse)
+```
 
 ```{r setup, echo=FALSE, purl=FALSE}
 source("setup.R")
 surveys_complete <- read_csv(file = "data_output/surveys_complete.csv", col_types = cols())
 ```
+
+
+
+
 
 ```{r, echo=FALSE, purl=TRUE}
 ### Data Visualization with ggplot2
